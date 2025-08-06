@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "../../styles/index.scss";
 
 export default function AboutPage() {
-  const LazyLanding = dynamic(() => import("./Landing/landing"));
+  const LazyLanding = dynamic(() => import("./Landing/Landing"));
   const LazyAboutNav = dynamic(() => import("./AboutNav/AboutNav"));
   const LazyScroll = dynamic(() => import("../SmoothScroll"));
   const LazyCursor = dynamic(() => import("../Cursor"));
