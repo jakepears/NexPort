@@ -170,40 +170,75 @@ footer .background video {
 
 @media (max-width: 768px) {
   .center {
-    height: 100dvh;
+    height: auto;
+    min-height: 100dvh;
+    padding: 10vw 0 8vh;
+  }
+
+  .center button {
+    font-size: 4vw;
   }
 
   .footerContent {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .footerContent p:nth-child(2) {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    margin-top: 4vw;
   }
 
   .footerList ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .linkList {
-    margin-top: 5dvh;
-    text-size-adjust: auto;
+    margin-top: 5vh;
   }
 
   .footerFinalP {
     text-align: center;
+    font-size: 3.5vw;
+    max-width: 90vw;
   }
 
-  .footerContent {
-    padding: 0 0;
-    height: 100dvh;
+  footer .background {
+    right: 0;
+    width: 100vw;
+    padding-top: 10vh;
+    padding-left: 0;
+    opacity: 0.3;
+  }
 
-    img,
-    video {
-      object-fit: contain;
-      height: 100%;
-      width: 100%;
-    }
+  footer .background video {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .center {
+    padding: 8vw 0 6vh;
+  }
+
+  .footerContent p:nth-child(2) {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+
+  .footerFinalP {
+    font-size: 4vw;
+  }
+
+  .center button {
+    font-size: 4.5vw;
   }
 }

@@ -86,9 +86,10 @@
   height: 40dvh;
 }
 
-.reaply {
-  height: 32dvw;
-  aspect-ratio: 1/1;
+.cloth {
+  width: 32dvw;
+  aspect-ratio: 16/9;
+  height: auto;
   margin-bottom: 12dvh;
   margin-top: 15dvh;
   margin-left: 4dvw;
@@ -99,12 +100,28 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
     z-index: 1;
   }
 }
 
 .beats {
+  padding-top: 5dvh;
+  margin-bottom: 20dvh;
+  width: 40dvw;
+  aspect-ratio: 16/9;
+  height: auto;
+  transition: all 350ms ease-in-out;
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+.armDis {
   padding-top: 5dvh;
   margin-bottom: 20dvh;
   width: 30dvw;
@@ -125,7 +142,7 @@
   font-weight: 300;
 }
 
-.beatsPic {
+.armDisPic {
   width: 100%;
 }
 
@@ -152,25 +169,29 @@
     height: 40dvh;
   }
 
-  .reaply {
-    height: 30.84722dvh;
-    width: 30.84722dvw;
-    margin-bottom: 11.59722dvw;
-    margin-top: 15dvh;
+  .cloth {
+    height: auto;
+    width: 80dvw;
+    aspect-ratio: 16/9;
+    margin-bottom: 8dvh;
+    margin-top: 8dvh;
+    margin-left: 0;
     max-width: 100%;
-    border-radius: 10%;
-    padding-left: 5dvw;
+    border-radius: 10px;
+    padding-left: 0;
 
     &.mf-cursor {
-      transform: scale(1.5);
+      transform: scale(1.02);
     }
   }
 
   .beats {
-    padding-bottom: 20dvh;
-    width: 40dvw;
-    height: 30dvh;
-    image-rendering: auto;
+    padding-top: 0;
+    margin-bottom: 8dvh;
+    margin-top: 8dvh;
+    width: 80dvw;
+    height: auto;
+    aspect-ratio: 16/9;
     transition: all 350ms ease-in-out;
   }
 
@@ -340,11 +361,19 @@
     margin: 0 0;
   }
 
-  .reaply {
-    margin-top: 10dvh;
+  .cloth {
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    width: 90dvw;
+    aspect-ratio: 16/9;
+    height: auto;
   }
 
   .beats {
-    margin-top: 10dvh;
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    width: 90dvw;
+    aspect-ratio: 16/9;
+    height: auto;
   }
 }

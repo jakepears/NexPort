@@ -156,6 +156,58 @@ html.lenis {
   pointer-events: none;
 }
 
+// Mobile-first responsive typography
+@media screen and (max-width: 768px) {
+  :root {
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.688rem;
+    --smallest-font-size: 0.625rem;
+  }
+
+  h1 {
+    font-size: 20vw;
+    line-height: 18vw;
+  }
+
+  h2 {
+    font-size: 12vw;
+    line-height: 11vw;
+  }
+
+  .contentWidth {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  .icon {
+    height: 14px;
+    width: 14px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 22vw;
+    line-height: 20vw;
+  }
+
+  h2 {
+    font-size: 14vw;
+    line-height: 13vw;
+  }
+
+  .contentWidth {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
+
 // /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px) {}
 
@@ -169,4 +221,4 @@ html.lenis {
 // @media only screen and (min-width: 992px) {}
 
 // /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {}
+// @media only screen and

@@ -56,3 +56,38 @@
   list-style: none;
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    top: 3dvh;
+    left: 4dvw;
+    font-size: 4vw;
+    
+    ul {
+      gap: 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .link {
+    padding: 0.5rem 0;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    top: 2dvh;
+    left: 3dvw;
+    font-size: 4.5vw;
+    
+    ul {
+      gap: 1.5rem;
+    }
+  }
+
+  .link {
+    font-size: 4.5vw;
+  }
+}

@@ -47,6 +47,7 @@
   position: absolute;
   top: 3dvw;
 }
+
 // Icon styles
 .icon {
   height: 16px;
@@ -79,4 +80,52 @@
 .column {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .reelContainer h2:first-child {
+    transform: translateX(-15vw);
+  }
+
+  .reelContainer h2:last-child {
+    transform: translateX(15vw);
+  }
+
+  .reelContainer p {
+    font-size: 3.5vw;
+  }
+
+  .reelBottomP {
+    bottom: 5vw;
+    text-align: center;
+    padding: 0 5vw;
+  }
+
+  .reelTopP {
+    top: 5vw;
+    padding: 0 5vw;
+  }
+
+  .reelContainer .video {
+    transform: scale(0.4);
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reelContainer h2:first-child {
+    transform: translateX(-12vw);
+  }
+
+  .reelContainer h2:last-child {
+    transform: translateX(12vw);
+  }
+
+  .reelContainer p {
+    font-size: 4vw;
+  }
+
+  .reelContainer .video {
+    transform: scale(0.3);
+  }
 }

@@ -148,3 +148,124 @@ a.flipAnimate {
     color: rgba(222, 223, 225, .85);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 5vh 5vw;
+
+    .rightCol {
+      flex: none;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    .topHeader {
+      padding-top: 8vh;
+      padding-right: 0;
+      font-size: 8vw;
+      text-align: center;
+    }
+
+    .topText {
+      padding-top: 4vh;
+      padding-right: 0;
+      font-size: 4.5vw;
+      text-align: center;
+    }
+
+    .secondHeader {
+      padding-top: 6vh;
+      padding-right: 0;
+      font-size: 7vw;
+      text-align: center;
+    }
+
+    .bottomText {
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      padding-right: 0;
+      font-size: 4vw;
+      text-align: center;
+    }
+
+    .git {
+      padding-top: 3vh;
+      font-size: 5vw;
+      text-align: center;
+    }
+
+    .goal {
+      font-size: 7vw;
+      text-align: center;
+    }
+
+    .aim {
+      font-size: 4vw;
+      text-align: center;
+    }
+
+    .group {
+      padding-top: 4vh;
+      padding-bottom: 4vh;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    li {
+      padding-top: 2vh;
+    }
+  }
+
+  .bottomList {
+    padding-bottom: 10vh;
+    font-size: 4vw;
+    text-align: center;
+
+    button {
+      font-size: 4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 3vh 3vw;
+
+    .topHeader {
+      font-size: 9vw;
+    }
+
+    .topText {
+      font-size: 5vw;
+    }
+
+    .secondHeader {
+      font-size: 8vw;
+    }
+
+    .bottomText {
+      font-size: 4.5vw;
+    }
+
+    .git {
+      font-size: 5.5vw;
+    }
+
+    .goal {
+      font-size: 8vw;
+    }
+
+    .aim {
+      font-size: 4.5vw;
+    }
+  }
+
+  .bottomList {
+    font-size: 4.5vw;
+
+    button {
+      font-size: 4.5vw;
+    }
+  }
+}

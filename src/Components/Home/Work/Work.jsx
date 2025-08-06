@@ -4,10 +4,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import primeraVid from "public/assets/vids/primera.webm";
-import reaplyVid from "public/assets/vids/reaplyCrop.webm";
-import beats from "public/assets/vids/beats-ad.webm";
+import clothAnim from "public/assets/vids/weavingAnim.webm";
+import beats from "public/assets/vids/vellumSim.webm";
+import armStill from "public/assets/images/vellumStill.webp";
 import primeraSC from "public/assets/images/primera-sc.webp";
-import reaplyImg from "public/assets/images/reaplyImg.webp";
+import clothStill from "public/assets/images/clothStill.webp";
 import styles from "./Work.module.scss";
 
 export default function Work() {
@@ -197,13 +198,13 @@ export default function Work() {
             <span className={styles.hoverFor}>Hover for preview</span>
           </div>
           <div
-            className={`${styles.block} ${styles.reaply}`}
+            className={`${styles.block} ${styles.cloth}`}
             ref={reaply}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             <Image
-              src={reaplyImg}
+              src={clothStill}
               alt={"picture of dude being cash money"}
               placeholder="blur"
               loading="lazy"
@@ -214,17 +215,17 @@ export default function Work() {
               muted
               disablePictureInPicture=""
               className={styles.video}
-              src={reaplyVid}
+              src={clothAnim}
               type="video/webm"
             >
-              <source src={reaplyVid} type="video/webm" />
+              <source src={clothAnim} type="video/webm" />
             </video>
             <div className={styles.textWrapper}>
               <p ref={(el) => (textAnims.current[1] = el)} className="textAnim">
                 <span>
-                  <strong>Reaply </strong>
+                  <strong>Cloth Animation </strong>
                 </span>
-                <span>Motion Design</span>
+                <span>3D Motion Design</span>
               </p>
             </div>
           </div>
@@ -238,8 +239,8 @@ export default function Work() {
           onMouseLeave={handleMouseLeave}
         >
           <Image
-            src="https://images.unsplash.com/photo-1627697823116-42877786ac26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            className={styles.beatsPic}
+            src={armStill}
+            className={styles.armDisPic}
             fill
             sizes="40dvw"
             loading="lazy"
@@ -259,9 +260,9 @@ export default function Work() {
           <div className={styles.textWrapper}>
             <p ref={(el) => (textAnims.current[2] = el)} className="textAnim">
               <span>
-                <strong>Beats</strong>
+                <strong>Arm Disintegration</strong>
               </span>
-              <span> Motion Design</span>
+              <span> VFX</span>
             </p>
           </div>
         </div>
